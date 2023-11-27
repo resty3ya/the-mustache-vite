@@ -1,12 +1,12 @@
 import { navlinks } from "../utils/constant";
-import img from "../assets/icons/mustache logo.svg";
+import img from "../assets/icons/mustach-logo.svg";
 
 const Navbar = () => {
   return (
     <header className="fixed h-[78px] py-8 w-full bg-[#3B3E33]/50">
       <nav className="flex justify-between items-center">
-        <a href="/">
-          <img src="" alt="logo" />
+        <a href="/" className="">
+          <img src={img} alt="logo" width={80} height={29} className="" />
         </a>
         <div className="grid-cols-4 px-10 space-x-11">
           {navlinks.map((item) => (
