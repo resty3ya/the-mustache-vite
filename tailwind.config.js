@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bangers: ["Bangers", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
