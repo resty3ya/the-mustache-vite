@@ -1,3 +1,5 @@
+import About from "./About";
+
 const Landing = () => {
   return (
     <main>
@@ -13,14 +15,16 @@ const Landing = () => {
             </p>
             <button
               type="submit"
-              className="bg-green-950 rounded-md px-5 font-nunito text-white"
+              className="bg-[#3B3E33] w-[230px] h-[45px] px-5 font-nunito text-[#F6F6F6]"
             >
               Book now
             </button>
           </div>
         </div>
       </section>
-      <section id="about">About</section>
+      <section id="about" className="bg-[#766B53]">
+        <About />
+      </section>
       <section id="services">Services</section>
       <section id="booking">Booking</section>
       <section id="gallery">Gallery</section>
