@@ -1,5 +1,6 @@
 import { navlinks } from "../utils/constant";
 import img from "../assets/icons/the-mustache-logo-white.svg";
+import { hamburger } from "../assets/icons";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <a href="/">
           <img src={img} alt="logo" width={70} height={25} />
         </a>
-        <div className="grid-cols-4 px-10 space-x-11 pt-10">
+        <div className="grid-cols-4 px-10 space-x-11 pt-5 max-lg:hidden">
           {navlinks.map((item) => (
             <a
               key={item.href}
@@ -18,6 +19,9 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
+        </div>
+        <div className="hidden max-lg:block pt-5 pr-5">
+          <img src={hamburger} alt="hamburger" width={30} height={25} />
         </div>
       </nav>
     </header>

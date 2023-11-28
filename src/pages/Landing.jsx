@@ -1,15 +1,13 @@
 import About from "./About";
+import { landing } from "../assets/images/index";
 
 const Landing = () => {
   return (
     <main>
-      <section
-        id="landing"
-        className="sm:pl-16 pl-8 bg-yellow-800 sm:pr-16 pr-8 sm:pb-24 pb-12"
-      >
-        <div className="w-full flex xl:flex-row justify-center min-h-screen">
-          <img src="" alt="" />
-          <div className="text-center">
+      <section id="home" className=" bg-yellow-800">
+        <div className="flex xl:flex-row justify-center ">
+          <img src={landing} alt="background" className="w-full" />
+          <div className="absolute text-center">
             <p className="text-white font-bangers text-4xl pb-6 pt-80">
               AT THE MUSTACHE WE DO THE PASSION WITH STYLE
             </p>
@@ -17,7 +15,7 @@ const Landing = () => {
               type="submit"
               className="bg-[#3B3E33] w-[230px] h-[45px] px-5 font-nunito text-[#F6F6F6]"
             >
-              Book now
+              <a href="#booking">Book now</a>
             </button>
           </div>
         </div>
