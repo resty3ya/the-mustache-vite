@@ -1,5 +1,5 @@
-import About from "./About";
 import { landing } from "../assets/images/index";
+import { Service, About } from "./";
 
 const Landing = () => {
   return (
@@ -23,7 +23,9 @@ const Landing = () => {
       <section id="about" className="bg-[#766B53]">
         <About />
       </section>
-      <section id="services">Services</section>
+      <section id="services" className="bg-[#D8D5B9]">
+        <Service />
+      </section>
       <section id="booking">Booking</section>
       <section id="gallery">Gallery</section>
       <section id="prices">Prices</section>
